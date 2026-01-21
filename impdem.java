@@ -19,14 +19,14 @@ public class impdem {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));  ----imp
-		//WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));---expl
+		WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		//---fluent wait 
-		Wait<WebDriver> mywait=new FluentWait<WebDriver>(driver)
-				.withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(5))
-				.ignoring(NoSuchElementException.class);
+		//Wait<WebDriver> mywait=new FluentWait<WebDriver>(driver)
+			//	.withTimeout(Duration.ofSeconds(30))
+			//	.pollingEvery(Duration.ofSeconds(5))
+				//.ignoring(NoSuchElementException.class);
 
-		driver.get("https://testautomationpractice.blogspot.com/");
+		/*driver.get("https://testautomationpractice.blogspot.com/");
 
 		WebElement lc = mywait
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("input[placeholder=\"Enter Name\"]")));
@@ -39,7 +39,7 @@ public class impdem {
 		driver.findElement(By.cssSelector("input[type='submit']")).click();
 		driver.findElement(By.cssSelector("#male")).click();
 
-		driver.quit(); 
+		driver.quit(); */
 	}
 
 }
