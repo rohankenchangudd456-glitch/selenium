@@ -30,6 +30,7 @@ public class tc6 {
 		Thread.sleep(2000);
 		alrt.sendKeys("Welcome to selenium");
 		alrt.accept();
+		alrt.dismiis();
 		
 		
 		
