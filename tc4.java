@@ -20,6 +20,7 @@ public class tc4 {
 		System.out.println(driver.getCurrentUrl());
 		driver.navigate().refresh();
 		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getCurrentUrl());
 		
 
 	}
